@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="2.8" jmeter="2.13.20161028">
+  <hashTree>
+    <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="stream_loop" enabled="true">
+      <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+      <stringProp name="RegexExtractor.refname">stream</stringProp>
+      <stringProp name="RegexExtractor.regex">media_(.*?)\.ts</stringProp>
+      <stringProp name="RegexExtractor.template">$1$</stringProp>
+      <stringProp name="RegexExtractor.default"></stringProp>
+      <stringProp name="RegexExtractor.match_number">-1</stringProp>
+      <stringProp name="Sample.scope">all</stringProp>
+    </RegexExtractor>
+    <hashTree/>
+  </hashTree>
+</jmeterTestPlan>
